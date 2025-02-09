@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Appointment Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Appointment Scheduler</h1>
+        <form id="appointmentForm">
+            <input type="text" id="clientName" placeholder="Client Name" required>
+            <input type="datetime-local" id="appointmentTime" required>
+            <select id="serviceType">
+                <option value="Consultation">Consultation</option>
+                <option value="Follow-up">Follow-up</option>
+            </select>
+            <button type="submit">Add Appointment</button>
+        </form>
+        <h2>Upcoming Appointments (Next Hour)</h2>
+        <ul id="upcomingList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
